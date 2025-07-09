@@ -1,0 +1,24 @@
+.catalog__menu {
+  position: absolute;
+  top: 170px; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+  display: none;
+  overflow-y: auto;
+  height: 100vh;
+
+  .menu__item:first-child {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+  }
+
+  .menu__list {
+    padding-bottom: 20px;
+  }
+}
+

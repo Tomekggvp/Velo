@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>тестовое</title>
+  <link rel="stylesheet" href="./scss/main.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="mobHeader">
+      <div class="header__top">
+        <div class="header__lang lang-switcher">
+          <div class="lang-switcher__icon">
+            <img src="/img/Vector.svg" alt="Language icon" class="lang-switcher__image">
+          </div>
+          <a href="#" class="lang-switcher__item lang-switcher__item--active">RU</a>
+          <span class="lang-switcher__separator"></span>
+          <a href="#" class="lang-switcher__item ">EN</a>
+        </div>
+        <div class="header__phone phone">
+          <div class="phone__icon">
+            <img src="/img/Group.svg" alt="Phone icon" class="phone__image">
+          </div>
+          <a href="tel:+75555553750" class="phone__number">+7&nbsp;&nbsp;&nbsp;555&nbsp;&nbsp;&nbsp;555-37-50</a>
+        </div>
+      </div>
+
+      <div class="header__middle">
+        <!-- Первая группа кнопок (меню и профиль) -->
+        <div class="header__group header__group--left">
+          <div class="header__button">
+            <a href="#" class="header__link">
+              <img src="/img/menu-btn.svg" alt="Меню" class="header__icon">
+            </a>
+          </div>
+
+          <nav class="header__menu" style="display: none;">
+            <div class="menu__header">
+              <div class="menu__location">
+                <img src="/img/location.svg" alt="Иконка локации" class="menu__icon">
+                <span>г.Москва</span>
+              </div>
+              <div class="menu__time">
+                <img src="/img/timer.svg" alt="Иконка времени" class="menu__icon">
+                <span
+                  class="time__text">Ежедневно&nbsp;&nbsp;&nbsp;&nbsp;9:00&nbsp;&nbsp;–&nbsp;&nbsp;&nbsp;&nbsp;21:00</span>
+
+                <div class="time__group">
+                  <a href="#" class="time__social">
+                    <img src="/img/telegram-icon.svg" alt="Telegram">
+                  </a>
+                  <a href="#" class="time__social">
+                    <img src="/img/whatsApp-icon.svg" alt="WhatsApp">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <ul class="menu__list">
+              <!-- Каталог -->
+              <li class="menu__item menu__item--with-action">
+                <a href="#" class="menu__link">
+                  <img src="/img/menu_li.svg" alt="" class="menu__icon">
+                  <span class="menu__text">Каталог</span>
+                  <span class="menu__arrow">
+                    <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+                  </span>
+                </a>
+              </li>
+
+              <!-- Акции -->
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img src="/img/li_2.svg" alt="" class="menu__icon">
+                  <span class="menu__text">Акции</span>
+                  <span class="menu__arrow"></span>
+                </a>
+              </li>
+
+              <!-- Горячее предложение -->
+              <li class="menu__item menu__item--with-action">
+                <a href="#" class="menu__link">
+                  <img src="/img/li_3.svg" alt="" class="menu__icon">
+                  <span class="menu__text">Горячее&nbsp;&nbsp;предложение</span>
+                  <span class="menu__arrow">
+                    <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+                  </span>
+                </a>
+              </li>
+
+              <!-- Подарочные наборы -->
+              <li class="menu__item menu__item--with-action">
+                <a href="#" class="menu__link">
+                  <img src="/img/li_4.svg" alt="" class="menu__icon">
+                  <span class="menu__text">Подарочные&nbsp;&nbsp;наборы</span>
+                  <span class="menu__arrow">
+                    <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+                  </span>
+                </a>
+              </li>
+
+              <!-- События -->
+              <li class="menu__item menu__item--with-action">
+                <a href="#" class="menu__link">
+                  <img src="/img/li_5.svg" alt="" class="menu__icon">
+                  <span class="menu__text">События</span>
+                  <span class="menu__arrow">
+                    <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+                  </span>
+                </a>
+              </li>
+
+              <!-- Наши бренды -->
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  <img src="/img/li_6.svg" alt="" class="menu__icon">
+                  <span class="menu__text">Наши&nbsp;&nbsp;бренды</span>
+                  <span class="menu__arrow"></span>
+                </a>
+              </li>
+
+              <!-- Собрать компьютер -->
+              <li class="menu__item menu__item--highlight">
+                <a href="#" class="menu__link">
+                  <img src="/img/plus.svg" alt="" class="menu__icon">
+                  <span class="menu__text">Собрать компьютер</span>
+                  <span class="menu__arrow"></span>
+                </a>
+              </li>
+
+              <!-- Доставка -->
+              <li class="menu__item menu__item--simple">
+                <a href="#" class="menu__link"
+                  style="background-color: #ffff; border-bottom: 1px solid #e8e8e8; padding-bottom: 10px;">
+                  <span class="menu__text">Доставка</span>
+                  <span class="menu__arrow"></span>
+                </a>
+              </li>
+
+              <!-- Оплата -->
+              <li class="menu__item menu__item--simple">
+                <a href="#" class="menu__link"
+                  style="background-color: #ffff; border-bottom: 1px solid #e8e8e8; padding-bottom: 10px;">
+                  <span class="menu__text">Оплата</span>
+                  <span class="menu__arrow"></span>
+                </a>
+              </li>
+
+              <!-- Контакты -->
+              <li class="menu__item menu__item--simple">
+                <a href="#" class="menu__link"
+                  style="background-color: #ffff; border-bottom: 1px solid #e8e8e8; padding-bottom: 10px;">
+                  <span class="menu__text">Контакты</span>
+                  <span class="menu__arrow"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__button">
+            <a href="#" class="header__link">
+              <img src="/img/profile-btn.svg" alt="Профиль" class="header__icon">
+            </a>
+          </div>
+        </div>
+
+        <!-- Логотип по центру -->
+        <div class="header__logo">
+          <img src="/img/logo-btn.svg" alt="Логотип" class="header__logo-image">
+        </div>
+
+        <!-- Вторая группа кнопок (избранное и корзина) -->
+        <div class="header__group header__group--right">
+          <div class="header__button">
+            <a href="#" class="header__link">
+              <img src="/img/favorites-btn.svg" alt="Избранное" class="header__icon">
+            </a>
+          </div>
+          <div class="header__button">
+            <a href="#" class="header__link">
+              <img src="/img/basket-btn.svg" alt="Корзина" class="header__icon">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__search">
+          <input type="text" class="header__search-input" placeholder="Поиск   товаров...">
+          <button type="submit" class="header__search-button">
+            <img src="/img/search-btn.svg" alt="Поиск" class="header__search-icon">
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <header class="desktopHeader">
+
+
+      <div class="header__top">
+        <div class="left-info">
+
+          <div class="menu__location">
+            <img src="/img/location.svg" alt="Иконка локации" class="menu__icon">
+            <span>Сайлент-Хил</span>
+          </div>
+
+          <div class="header__phone phone">
+            <div class="phone__icon">
+              <img src="/img/Group.svg" alt="Phone icon" class="phone__image">
+              <span>+7&nbsp;&nbsp;&nbsp;555&nbsp;&nbsp;&nbsp;555-37-50</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__time">
+          <span
+            class="time__text">Ежедневно&nbsp;&nbsp;&nbsp;&nbsp;9:00&nbsp;&nbsp;–&nbsp;&nbsp;&nbsp;&nbsp;21:00</span>
+        </div>
+
+
+        <div class="info">
+          <a href="#" class="menu__link">
+            <span class="menu__text">Доставка</span>
+          </a>
+
+          <a href="#" class="menu__link">
+            <span class="menu__text">Оплата</span>
+          </a>
+
+          <a href="#" class="menu__link">
+            <span class="menu__text">Контакты</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="desktopHeader__menu">
+        <div class="menu__top">
+
+          <div class="menu__logo">
+            <img src="/img/logo-btn.svg" alt="">
+          </div>
+
+          <div class="header__button" id="1">
+            <a href="#" class="header__link" style="display: flex; align-items: center; justify-content: center;">
+              <img src="/img/longg-btn-menu.svg" alt="Меню" class="header__icon">
+              <img src="/img/stripes-icon.svg" alt="" class="icon__stripes" style="position: absolute;">
+            </a>
+          </div>
+          
+          <div class="header__search">
+            <input type="text" class="header__search-input" placeholder="Поиск   товаров...">
+            <button type="submit" class="header__search-button" style="display: flex; align-items: center; justify-content: center;">
+              <img src="/img/search-2.svg" alt="Поиск" class="header__search-icon">
+              <span style="position: absolute; color: #ffff;">Найти</span>
+            </button>
+          </div>
+
+          <div class="time__group">
+            <a href="#" class="time__social">
+              <img src="/img/telegram-icon.svg" alt="Telegram">
+            </a>
+            <a href="#" class="time__social">
+              <img src="/img/whatsApp-icon.svg" alt="WhatsApp">
+            </a>
+          </div>
+
+          <div class="header__lang lang-switcher">
+            <div class="lang-switcher__icon">
+              <img src="/img/Vector.svg" alt="Language icon" class="lang-switcher__image">
+            </div>
+            <a href="#" class="lang-switcher__item lang-switcher__item--active">RU</a>
+            <span class="lang-switcher__separator"></span>
+            <a href="#" class="lang-switcher__item ">EN</a>
+          </div>
+
+
+          <div class="header__group header__group--right">
+            <div class="header__button">
+              <a href="#" class="header__link">
+                <img src="/img/favorites-btn.svg" alt="Избранное" class="header__icon">
+              </a>
+            </div>
+            <div class="header__button">
+              <a href="#" class="header__link">
+                <img src="/img/profile-btn.svg" alt="Профиль" class="header__icon">
+              </a>
+            </div>
+            <div class="header__button">
+              <a href="#" class="header__link">
+                <img src="/img/basket-btn.svg" alt="Корзина" class="header__icon">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu__bottom">
+        <ul class="menu__list">
+
+          <!-- Акции -->
+          <!-- Горячее предложение -->
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/li_3.svg" alt="" class="menu__icon">
+              <span class="menu__text">Горячее&nbsp;&nbsp;предложение</span>
+            </a>
+          </li>
+
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <img src="/img/li_2.svg" alt="" class="menu__icon">
+              <span class="menu__text">Акции</span>
+              <span class="menu__arrow"></span>
+            </a>
+          </li>
+
+          <!-- Подарочные наборы -->
+          <li class="menu__item menu__item--with-action" id="2">
+            <a href="#" class="menu__link">
+              <img src="/img/li_4.svg" alt="" class="menu__icon">
+              <span class="menu__text">Подарочные&nbsp;&nbsp;наборы</span>
+            </a>
+          </li>
+
+          <!-- События -->
+          <li class="menu__item menu__item--with-action" id="3">
+            <a href="#" class="menu__link">
+              <img src="/img/li_5.svg" alt="" class="menu__icon">
+              <span class="menu__text">События</span>
+            </a>
+          </li>
+
+          <!-- Наши бренды -->
+          <li class="menu__item">
+            <a href="#" class="menu__link">
+              <img src="/img/li_6.svg" alt="" class="menu__icon">
+              <span class="menu__text">Наши&nbsp;&nbsp;бренды</span>
+              <span class="menu__arrow"></span>
+            </a>
+          </li>
+
+          <!-- Собрать компьютер -->
+          <li class="menu__item menu__item--highlight">
+            <a href="#" class="menu__link">
+              <img src="/img/plus.svg" alt="" class="menu__icon">
+              <span class="menu__text">Собрать&nbsp;&nbsp;&nbsp;&nbsp;компьютер</span>
+              <span class="menu__arrow"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </header>
+
+     <nav class="catalog__menu" style="display: none;">
+    <ul class="menu__list">
+      <li class="menu__item menu__item--simple">
+        <a href="#" class="menu__link" style="background-color: #ffff; padding-bottom: 10px; padding-left: 0;">
+          <img src="/img/left-arrow.svg" alt="Перейти" class="menu__arrow-icon" style="margin-right: 29px;">
+          <span class="menu__text">Каталог</span>
+          <span class="menu__arrow"></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <img src="/img/smartphone.svg" alt="" class="menu__icon">
+          <span class="menu__text">Смартфоны&nbsp;&nbsp;и&nbsp;гаджеты</span>
+          <span class="menu__arrow">
+            <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <img src="/img/laptop.svg" alt="" class="menu__icon">
+          <span class="menu__text">Ноутбуки&nbsp;и&nbsp;компьютеры</span>
+          <span class="menu__arrow">
+            <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <img src="/img/tv.svg" alt="" class="menu__icon">
+          <span class="menu__text">Телевизоры&nbsp;и&nbsp;цифровые</span>
+          <span class="menu__arrow">
+            <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <img src="/img/audio.svg" alt="" class="menu__icon">
+          <span class="menu__text">Аудиотехника</span>
+          <span class="menu__arrow">
+            <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <img src="/img/li_2.svg" alt="" class="menu__icon">
+          <span class="menu__text">Акции</span>
+          <span class="menu__arrow">
+            <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <img src="/img/new-items.svg" alt="" class="menu__icon">
+          <span class="menu__text">Новинки</span>
+          <span class="menu__arrow">
+            <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  </header>
+
+  <main class="main" style="display: block;">
+    <div class="main__container">
+      <div class="main__title">
+        <p class="main__title-text mobile">Отправляйся <br> в приключения с нашими <br> эпическими лут-корзинами <br> и
+          наборами!</p>
+        <p class="main__title-text desktop"></p>
+      </div>
+
+      <div class="main__body">
+        <p class="main__body-text mobilee">
+          Развивай&nbsp;&nbsp;свои&nbsp;&nbsp;навыки,&nbsp;&nbsp;следуя&nbsp;&nbsp;мудрым
+          стратегиям&nbsp;&nbsp;мастеров,&nbsp;&nbsp;и&nbsp;&nbsp;поднимайся&nbsp;&nbsp;на&nbsp;&nbsp;новый
+          уровень&nbsp;&nbsp;мастерства!&nbsp;&nbsp;С&nbsp;&nbsp;нашей&nbsp;&nbsp;поддержкой&nbsp;&nbsp;каждое&nbsp;&nbsp;твое&nbsp;&nbsp;действие&nbsp;&nbsp;станет&nbsp;&nbsp;частью&nbsp;&nbsp;великого&nbsp;&nbsp;искусства,&nbsp;&nbsp;а&nbsp;&nbsp;победы&nbsp;&nbsp;—&nbsp;&nbsp;результатом&nbsp;&nbsp;точного&nbsp;&nbsp;плана&nbsp;&nbsp;и&nbsp;&nbsp;безупречной&nbsp;&nbsp;подготовки!
+        </p>
+        <p class="main__body-text desktopp"></p>
+      </div>
+
+      <div class="main__actions">
+        <button class="main__button">В&nbsp;&nbsp;&nbsp;&nbsp;каталог</button>
+      </div>
+    </div>
+
+    <div class="main__logo">
+      <img src="/img/gamepad.svg" alt="Логотип">
+    </div>
+  </main>
+
+
+ 
+
+  <nav class="calatog__menu-desktop">
+    <div class="container">
+      <div class="catalog">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/smartphone.svg" alt="" class="menu__icon">
+              <span class="menu__text">Смартфоны&nbsp;и&nbsp;гаджеты</span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/laptop.svg" alt="" class="menu__icon">
+              <span class="menu__text">Ноутбуки&nbsp;и&nbsp;компьютеры</span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/tv.svg" alt="" class="menu__icon">
+              <span class="menu__text">Телевизоры&nbsp;и&nbsp;цифровые</span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/audio.svg" alt="" class="menu__icon">
+              <span class="menu__text">Аудиотехника</span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/li_2.svg" alt="" class="menu__icon">
+              <span class="menu__text">Акции</span>
+
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/new-items.svg" alt="" class="menu__icon">
+              <span class="menu__text">Новинки</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="phones">
+        <ul class="menu__list">
+          <span class="menu__text-title">Смартфоны</span>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Apple iPhone<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">123</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Гаджеты<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">227</span></span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">iPhone 16<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">120</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Складные<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">30</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">realme<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">120</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Huawei Mate X6<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">100</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Кнопочные<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">23</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Домашние<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">17</span></span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Samsung<span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">27</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="gadgets">
+        <ul class="menu__list">
+          <span class="menu__text-title">Гаджеты</span>
+
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Смарт-часы<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  15</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Смарт-кольца<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  34</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Наушники<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 21</span>
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Гарнитуры <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  12</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Портативное аудио <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  42</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Умные гаджеты <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  46</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Очки VR <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 49</span>
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Для блогеров <span
+                  style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">32</span> </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="gifts__menu-desktop">
+    <div class="container">
+      <div class="catalog">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/group-who.svg" alt="" class="menu__icon">
+              <span class="menu__text">Кому</span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/swords.svg" alt="" class="menu__icon">
+              <span class="menu__text">Повод</span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <img src="/img/filling.svg" alt="" class="menu__icon">
+              <span class="menu__text">Наполнение</span>
+              <span class="menu__arrow">
+                <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="who">
+
+        <ul class="menu__list">
+
+          <span class="menu__text-title">Кому</span>
+
+
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Для мужчин<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  123</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Для женщин<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  63</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Папе<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 120</span>
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Сотрудникам <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  30</span> </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Мужу<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 120</span>
+              </span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Корпоративный<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+                  100</span> </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="events__menu-desktop">
+    <div class="container">
+      <div class="events">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">ИгроМир</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Мероприятия</span>
+            </a>
+          </li>
+          <li class="menu__item menu__item--with-action">
+            <a href="#" class="menu__link">
+              <span class="menu__text">Мастер-классы</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="phones__menu" style="display: none;">
+    <ul class="menu__list">
+      <li class="menu__item menu__item--simple">
+        <a href="#" class="menu__link" style="background-color: #ffff; padding-bottom: 10px; padding-left: 0;">
+          <img src="/img/left-arrow.svg" alt="Перейти" class="menu__arrow-icon" style="margin-right: 29px;">
+          <span class="menu__text">Смартфоны</span>
+          <span class="menu__arrow"></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Apple iPhone<span
+              style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">123</span></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Гаджеты<span
+              style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">227</span></span>
+          <span class="menu__arrow">
+            <img src="/img/next-btn-icon.svg" alt="Перейти" class="menu__arrow-icon">
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">iPhone 16<span
+              style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">120</span></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Складные<span
+              style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">30</span></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">realme<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">120</span></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Huawei Mate X6<span
+              style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">100</span></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Кнопочные<span
+              style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">23</span></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Домашние<span
+              style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">17</span></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Samsung<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">27</span></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav class="gadgets__menu" style="display: none;">
+    <ul class="menu__list">
+      <li class="menu__item menu__item--simple">
+        <a href="#" class="menu__link" style="background-color: #ffff; padding-bottom: 10px; padding-left: 0;">
+          <img src="/img/left-arrow.svg" alt="Перейти" class="menu__arrow-icon" style="margin-right: 29px;">
+          <span class="menu__text">Гаджеты</span>
+          <span class="menu__arrow"></span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Смарт-часы<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 15</span>
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Смарт-кольца<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 34</span>
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Наушники<span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 21</span>
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Гарнитуры <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 12</span>
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Портативное аудио <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+              42</span> </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Умные гаджеты <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">
+              46</span> </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Очки VR <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;"> 49</span>
+          </span>
+        </a>
+      </li>
+      <li class="menu__item menu__item--with-action">
+        <a href="#" class="menu__link">
+          <span class="menu__text">Для блогеров <span style="color: rgba(52, 58, 63, 0.5); margin-left: 8px;">32</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+
+<script src="/js/menu-btn.js"></script>
+<script src="/js/lang-switch.js"></script>
+<script src="/js/catalog-desktop.js"></script>
+
+
+</html>

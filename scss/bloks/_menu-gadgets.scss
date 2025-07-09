@@ -1,0 +1,40 @@
+.gadgets__menu {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+  display: none;
+  overflow-y: auto;
+  height: 100vh;
+  font-family: "Maza", monospace;
+
+  &__count {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #343a3f;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+
+  .menu__item:first-child {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+  }
+
+  .menu__list {
+    padding-bottom: 20px;
+  }
+}

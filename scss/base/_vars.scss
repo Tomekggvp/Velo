@@ -1,0 +1,16 @@
+//Fonts
+
+$font-path: '../fonts/' !default;
+$font-family-maza: 'Maza' !default;
+
+// Основное начертание Regular
+@font-face {
+  font-family: $font-family-maza;
+  src: url('#{$font-path}Maza Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Переменная для использования
+$maza-regular: $font-family-maza, sans-serif;
